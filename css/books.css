@@ -1,0 +1,127 @@
+/* ==========================
+   books.css – Styling for Books Page
+   ========================== */
+
+.books-container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* 📚 Horizontal Scrollable Book Section */
+.books-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.books-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.books-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.books-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 📘 Individual Book Card */
+.book-card {
+  flex: 0 0 auto;
+  width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  font-size: 1.1rem;
+  margin: 0.8rem 0 0.3rem;
+  color: #333;
+}
+
+.book-card .price {
+  color: #0077ff;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+/* 🛒 Add to Cart Button */
+.book-card button {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #005fcc;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .book-card {
+    width: 180px;
+  }
+
+  .book-card img {
+    height: 200px;
+  }
+
+  .book-card h3 {
+    font-size: 1rem;
+  }
+
+  .book-card button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-container {
+    padding: 2rem 1rem;
+  }
+
+  .book-card {
+    width: 150px;
+  }
+
+  .book-card img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

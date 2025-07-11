@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Store</title>
+
+  <!-- Swiper and FontAwesome -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<!-- Landing Page for Book store - Book Point -->
+<div id="splash-book">
+  <div class="book">
+    <div class="page" id="page1"></div>
+    <div class="page" id="page2"></div>
+    <div class="page" id="page3"></div>
+  </div>
+</div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-1">
+      <a href="#" class="logo"> <i class="fas fa-book"></i> Book Point </a>
+
+      <form action="" class="search-form">
+        <input type="search" placeholder="Search here..." id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+
+        <!-- Dynamic Login/Logout and Greeting -->
+        <div class="user-info">
+          <span id="greeting"></span>
+          <a href="login.html" class="fas fa-user" id="login-icon"></a>
+          <a href="#" id="logout-btn" style="display:none; color: red;">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Book Point 📚</h1>
+      <p>Your one-stop shop for bestsellers, fiction, academic books and more.</p>
+      <a href="books.html" class="browse-books">
+        <i class="fas fa-book-open"></i> Browse Books
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED BOOKS -->
+  <section class="featured-books-horizontal">
+    <h2>📚 Featured Books</h2>
+    <div class="horizontal-scroll-container">
+      <!-- Book Cards (Repeat as needed) -->
+      <div class="book-card">
+        <img src="../images/book1.png" alt="Book 1" />
+        <h3>The Alchemist</h3>
+        <p class="price"><span class="original">₹499</span> ₹299</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="../images/book2.png" alt="Book 2" />
+        <h3>Atomic Habits</h3>
+        <p class="price"><span class="original">₹699</span> ₹429</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="../images/book3.png" alt="Book 3" />
+        <h3>Ikigai</h3>
+        <p class="price"><span class="original">₹599</span> ₹350</p>
+        <button>Add to Cart</button>
+        </div>
+      <div class="book-card">
+        <img src="../images/book4.png" alt="Book 4" />    
+        <h3>Educated</h3>
+        <p class="price"><span class="original">₹799</span> ₹499
+        </p>
+        <button>Add to Cart</button>
+        </div>
+      <div class="book-card">
+        <img src="../images/book5.png" alt="Book 5" />
+        <h3>Becoming</h3>
+        <p class="price"><span class="original">₹899</span> ₹599  
+        </p>
+        <button>Add to Cart</button>
+        </div>
+      <div class="book-card">
+        <img src="../images/book6.png" alt="Book 6" />
+        <h3>Where the Crawdads Sing</h3>
+        <p class="price"><span class="original">₹799</span> ₹499</p>
+        <button>Add to Cart</button>
+        </div>
+      <div class="book-card">
+        <img src="../images/book6.png" alt="Book 7" />
+        <h3>The Silent Patient</h3>
+        <p class="price"><span class="original">₹699</span> ₹399</p>
+        <button>Add to Cart</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <h2>⭐ Customer Reviews</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <p>"The Alchemist is an absolute masterpiece. Delivery was fast and packaging was great!"</p>
+        <div class="reviewer">— Priya Sharma</div>
+      </div>
+
+      <div class="review-card">
+        <p>"Got Atomic Habits at a great discount. This store is now my go-to for books!"</p>
+        <div class="reviewer">— Rahul Mehta</div>
+      </div>
+
+      <div class="review-card">
+        <p>"Excellent service. The book quality was superb. Highly recommend!"</p>
+        <div class="reviewer">— Ananya Roy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>📚 Book Point</h3>
+        <p>Your one-stop shop for fiction, self-help, academic books, and more.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: viveksaha096@gmail.com</p>
+        <p>Phone: +91 8093189895</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Book Point. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LOGIN LOGIC -->
+  <script>
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    const greeting = document.getElementById("greeting");
+    const logoutBtn = document.getElementById("logout-btn");
+    const loginIcon = document.getElementById("login-icon");
+
+    if (user) {
+      greeting.textContent = `Hello, ${user.name}`;
+      logoutBtn.style.display = "inline-block";
+      loginIcon.style.display = "none";
+
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("loggedInUser");
+        window.location.reload();
+      });
+    }
+  
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("splash-book").style.display = "none";
+    }, 5000); // 3s animation + 2s fade
+  });
+
+
+  </script>
+
+</body>
+</html>

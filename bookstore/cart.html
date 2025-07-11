@@ -1,0 +1,72 @@
+<!-- bookstore/cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cart | Book Point</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Header (same as other pages) -->
+  <header class="header">
+    <div class="header-1">
+      <a href="index.html" class="logo"><i class="fas fa-book"></i> Book Point</a>
+      <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="icons">
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🛒 Cart Items Section -->
+  <section class="cart-section">
+    <h2>🛒 Your Cart</h2>
+    <div id="cart-container">
+      <!-- Cart items will be added here using JavaScript -->
+    </div>
+
+    <!-- Total Section -->
+    <div class="cart-total">
+      <h3>Total: ₹<span id="cart-total">0</span></h3>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>📚 Book Point</h3>
+        <p>Your one-stop shop for fiction, self-help, academic books, and more.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: support@bookpoint.com</p>
+        <p>Phone: +91 9876543210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Book Point. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/cart.js"></script>
+</body>
+</html>
